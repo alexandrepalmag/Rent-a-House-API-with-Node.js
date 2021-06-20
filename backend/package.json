@@ -5,6 +5,11 @@
   "repository": "https://github.com/alexandrepalmag/Rent-a-House-API-with-Node.js.git",
   "author": "alexandrepalmag <alepalmag85ti@gmail.com>",
   "license": "MIT",
+  "scripts": {
+"dev": "nodemon src/server.js"
+
+
+  },
   "dependencies": {
     "express": "^4.17.1",
     "sucrase": "^3.18.2"
