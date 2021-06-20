@@ -3,6 +3,6 @@ import SessionController from './controllers/SessionController';
 
 const routes = new Router();
 
-routes.get('/sessions', SessionController.store);
+routes.post('/sessions', SessionController.store); // to login
 
 export default routes;
