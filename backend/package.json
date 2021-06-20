@@ -1,0 +1,8 @@
+{
+  "name": "rent_house_node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/alexandrepalmag/Rent-a-House-API-with-Node.js.git",
+  "author": "alexandrepalmag <alepalmag85ti@gmail.com>",
+  "license": "MIT"
+}
