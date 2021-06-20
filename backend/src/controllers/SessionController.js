@@ -6,12 +6,24 @@ update ==> Change any session
 store ==> Create a new session
 destroy ==> Delete a session
 */
+import User from '../models/User';
 
 class SessionControler {
 
-    store(req, res) {
+    //login to application
+    async store(req, res) {
 
-        return res.json({ message: "my api" });
+        const { email } = req.body; //get email from requisition
+
+        let user = await User.findOne({ email: email });// to verify if user already exists
+
+        if (!user) {//verification
+
+            user = await User.create({ email: email }) //get email and creation on database
+
+        }
+
+        return res.json(user);
 
     }
 
